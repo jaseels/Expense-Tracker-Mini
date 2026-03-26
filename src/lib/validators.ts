@@ -15,9 +15,5 @@ export function validateExpense(data: ExpenseFormData): Record<string, string> {
     errors.date = "Please select a date";
   }
 
-  if (!data.description.trim()) {
-    errors.description = "Please enter a description";
-  }
-
   return errors;
 }
